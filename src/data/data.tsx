@@ -1,29 +1,14 @@
-import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-} from '@heroicons/react/24/outline';
+import {AcademicCapIcon, CalendarIcon, FlagIcon, MapIcon} from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
+import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/header-background.webp';
-import percussionHero from '../images/portfolio/percussion_hero.png';
+import profilepic from '../images/ethan.jpg';
+import heroImage from '../images/header-background.png';
 import chi2023 from '../images/portfolio/chi_2023.png';
 import libemg from '../images/portfolio/libemg.png';
-import profilepic from '../images/ethan.jpg';
-import {
-  About,
-  ContactSection,
-  ContactType,
-  Hero,
-  HomepageMeta,
-  PortfolioItem,
-  Social,
-  TimelineItem,
-} from './dataDef';
-import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
+import percussionHero from '../images/portfolio/percussion_hero.png';
+import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
@@ -39,7 +24,6 @@ export const homePageMeta: HomepageMeta = {
 export const SectionId = {
   Hero: 'hero',
   About: 'about',
-  Contact: 'contact',
   Portfolio: 'publications',
   Resume: 'resume',
   Stats: 'stats',
@@ -56,24 +40,11 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.
       </p>
     </>
   ),
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
   ],
 };
 
@@ -116,66 +87,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://dl.acm.org/doi/10.1145/3450337.3483508',
     image: percussionHero,
   },
-  // {
-  //   title: 'Project title 2',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage2,
-  // },
-  // {
-  //   title: 'Project title 3',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage3,
-  // },
-  // {
-  //   title: 'Project title 4',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage4,
-  // },
-  // {
-  //   title: 'Project title 5',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage5,
-  // },
-  // {
-  //   title: 'Project title 6',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage6,
-  // },
-  // {
-  //   title: 'Project title 7',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage7,
-  // },
-  // {
-  //   title: 'Project title 8',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage8,
-  // },
-  // {
-  //   title: 'Project title 9',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage9,
-  // },
-  // {
-  //   title: 'Project title 10',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage10,
-  // },
-  // {
-  //   title: 'Project title 11',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage11,
-  // },
 ];
 
 /**
@@ -186,7 +97,13 @@ export const education: TimelineItem[] = [
     date: 'September 2021 - Present',
     location: 'University of New Brunswick',
     title: 'P.h.D in Electrical and Computer Engineering',
-    content: <div><p>Focusing on EMG-based input for general-purpose applications.</p><p></p><p>Cumulative GPA: 4.3 / 4.3</p></div>,
+    content: (
+      <div>
+        <p>Focusing on EMG-based control for ubiquitous hands-free input.</p>
+        <p></p>
+        <p>Cumulative GPA: 4.3 / 4.3</p>
+      </div>
+    ),
   },
   {
     date: 'April 2021',
@@ -203,8 +120,10 @@ export const experience: TimelineItem[] = [
     title: 'Research Assistant',
     content: (
       <ul>
-        <li>- Developed a video game to assist adolescents with Cystic Fibrosis.</li>
-        <li>- Primary tasks were C# development in Unity and technical research/writing for CHI Play 2021 conference paper.</li>
+        <li>- Developed a <i>serious game</i> to promote therapy adherence for adolescents with Cystic Fibrosis.</li>
+        <li>
+          - Primary tasks were C# development in Unity and technical research/writing.
+        </li>
       </ul>
     ),
   },
@@ -259,7 +178,12 @@ export const awards: TimelineItem[] = [
     date: '2021 ',
     location: 'CHI Play',
     title: 'Student Game Design Competition - Best Game',
-    content: <p>Publication: “Percussion Hero: A Chest Physical Therapy Game for People with Cystic Fibrosis and their Caregivers</p>,
+    content: (
+      <p>
+        Publication: “Percussion Hero: A Chest Physical Therapy Game for People with Cystic Fibrosis and their
+        Caregivers
+      </p>
+    ),
   },
   {
     date: '2021',
@@ -271,35 +195,11 @@ export const awards: TimelineItem[] = [
     date: '2021',
     location: 'University of New Brunswick',
     title: 'David MacNeil Prize ',
-    content: <p>Awarded to the top Software Engineering capstone design project for the engineering department at UNB.</p>,
+    content: (
+      <p>Awarded to the top Software Engineering capstone design project for the engineering department at UNB.</p>
+    ),
   },
 ];
-
-/**
- * Contact section
- */
-
-export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
-  items: [
-    {
-      type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Github,
-      text: 'eeddy',
-      href: 'https://github.com/eeddy',
-    },
-  ],
-};
 
 /**
  * Social items
@@ -307,5 +207,9 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/eeddy'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/ethan-eddy-49079719b/'},
-  {label: 'GoogleScholar', Icon: GoogleScholarIcon, href: 'https://scholar.google.com/citations?hl=en&user=z7_82nsAAAAJ'},
+  {
+    label: 'GoogleScholar',
+    Icon: GoogleScholarIcon,
+    href: 'https://scholar.google.com/citations?hl=en&user=z7_82nsAAAAJ',
+  },
 ];

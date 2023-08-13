@@ -62,7 +62,7 @@ export interface Stat {
  * Portfolio section
  */
 export interface PortfolioItem {
-  venue: string,
+  venue: string;
   title: string;
   description: string;
   url: string;
@@ -78,39 +78,6 @@ export interface TimelineItem {
   title: string;
   content: JSX.Element;
 }
-
-
-/**
- * Contact section
- */
-export interface ContactSection {
-  headerText?: string;
-  description: string;
-  items: ContactItem[];
-}
-
-export const ContactType = {
-  Email: 'Email',
-  Phone: 'Phone',
-  Location: 'Location',
-  Github: 'Github',
-  LinkedIn: 'LinkedIn',
-  Facebook: 'Facebook',
-} as const;
-
-export type ContactType = (typeof ContactType)[keyof typeof ContactType];
-
-export interface ContactItem {
-  type: ContactType;
-  text: string;
-  href?: string;
-}
-
-export interface ContactValue {
-  Icon: FC<IconProps> | ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
-  srLabel: string;
-}
-
 /**
  * Social items
  */
