@@ -59,24 +59,10 @@ export interface Stat {
 }
 
 /**
- * Skills section
- */
-
-export interface Skill {
-  name: string;
-  level: number;
-  max?: number;
-}
-
-export interface SkillGroup {
-  name: string;
-  skills: Skill[];
-}
-
-/**
  * Portfolio section
  */
 export interface PortfolioItem {
+  venue: string,
   title: string;
   description: string;
   url: string;
@@ -93,19 +79,6 @@ export interface TimelineItem {
   content: JSX.Element;
 }
 
-/**
- * Testimonial section
- */
-export interface TestimonialSection {
-  imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
-}
-
-export interface Testimonial {
-  image?: string;
-  name: string;
-  text: string;
-}
 
 /**
  * Contact section
@@ -123,8 +96,6 @@ export const ContactType = {
   Github: 'Github',
   LinkedIn: 'LinkedIn',
   Facebook: 'Facebook',
-  Twitter: 'Twitter',
-  Instagram: 'Instagram',
 } as const;
 
 export type ContactType = (typeof ContactType)[keyof typeof ContactType];
