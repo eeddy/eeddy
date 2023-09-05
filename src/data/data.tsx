@@ -14,8 +14,8 @@ import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Ethan Eddy',
+  description: "Ethan Eddy's portfolio website",
 };
 
 /**
@@ -40,12 +40,12 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.
+        I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests include
+        human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.
       </p>
     </>
   ),
-  actions: [
-  ],
+  actions: [],
 };
 
 /**
@@ -120,10 +120,10 @@ export const experience: TimelineItem[] = [
     title: 'Research Assistant',
     content: (
       <ul>
-        <li>- Developed a <i>serious game</i> to promote therapy adherence for adolescents with Cystic Fibrosis.</li>
         <li>
-          - Primary tasks were C# development in Unity and technical research/writing.
+          - Developed a <i>serious game</i> to promote therapy adherence for adolescents with Cystic Fibrosis.
         </li>
+        <li>- Primary tasks were C# development in Unity and technical research/writing.</li>
       </ul>
     ),
   },
