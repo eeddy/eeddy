@@ -3,8 +3,10 @@ import {AcademicCapIcon, CalendarIcon, FlagIcon, MapIcon} from '@heroicons/react
 import GithubIcon from '../components/Icon/GithubIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import {isMobile} from '../config';
 import profilepic from '../images/ethan.jpg';
 import heroImage from '../images/header-background.png';
+import meVR from '../images/me_vr.png';
 import chi2023 from '../images/portfolio/chi_2023.png';
 import libemg from '../images/portfolio/libemg.png';
 import percussionHero from '../images/portfolio/percussion_hero.png';
@@ -34,19 +36,39 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
-export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `Ethan Eddy`,
-  description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests include
-        human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.
-      </p>
-    </>
-  ),
-  actions: [],
-};
+let hd: Hero;
+if (isMobile) {
+  hd = {
+    imageSrc: meVR,
+    name: `Ethan Eddy`,
+    description: (
+      <>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
+          include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric
+          control.
+        </p>
+      </>
+    ),
+    actions: [],
+  };
+} else {
+  hd = {
+    imageSrc: heroImage,
+    name: `Ethan Eddy`,
+    description: (
+      <>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
+          include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric
+          control.
+        </p>
+      </>
+    ),
+    actions: [],
+  };
+}
+export const heroData: Hero = hd;
 
 /**
  * About section
