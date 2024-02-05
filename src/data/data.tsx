@@ -8,6 +8,7 @@ import profilepic from '../images/ethan.jpg';
 import heroImage from '../images/header-background.png';
 import meVR from '../images/me_vr.png';
 import chi2023 from '../images/portfolio/chi_2023.png';
+import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
@@ -89,22 +90,29 @@ export const aboutData: About = {
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    venue: 'IEEE Access (2023)',
-    title: 'LibEMG',
+    venue: 'Contextually Informed Adaptation',
+    title: 'IEEE SMC (2023)',
+    description: 'Leveraging Task-Specific Context to Improve Unsupervised Adaptation for Myoelectric Control',
+    url: 'https://ieeexplore.ieee.org/document/10394393',
+    image: contextConf,
+  },
+  {
+    venue: 'LibEMG: An Open Source Library',
+    title: 'IEEE Access (2023)',
     description: 'LibEMG: An Open Source Library to Facilitate the Exploration of Myoelectric Control',
     url: 'https://ieeexplore.ieee.org/document/10214558',
     image: libemg,
   },
   {
-    venue: 'CHI (2023)',
-    title: 'Future of EMG-Based Input',
+    venue: 'The Future of EMG-Based Input in HCI',
+    title: 'CHI (2023)',
     description: 'A Framework and Call to Action for the Future Development of EMG-Based Input in HCI',
     url: 'https://dl.acm.org/doi/abs/10.1145/3544548.3580962',
     image: chi2023,
   },
   {
-    venue: 'CHI Play (2021)',
-    title: 'Percussion Hero',
+    venue: 'Percussion Hero: A Serious Game',
+    title: 'CHI Play (2021)',
     description: 'Percussion Hero: A Chest Physical Therapy Game for People with Cystic Fibrosis and their Caregivers',
     url: 'https://dl.acm.org/doi/10.1145/3450337.3483508',
     image: percussionHero,
