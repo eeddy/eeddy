@@ -11,6 +11,7 @@ import chi2023 from '../images/portfolio/chi_2023.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
 import percussionHero from '../images/portfolio/percussion_hero.png';
+import ww from '../images/portfolio/wake_word.png';
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
 
 /**
@@ -89,6 +90,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'On-Demand Myoelectric Control',
+    title: 'TBD (2024)',
+    description: 'On-Demand Myoelectric Control Using Wake Gestures to Eliminate False Activations During Activities of Daily Living',
+    url: 'https://arxiv.org/abs/2402.10050',
+    image: ww,
+  },
   {
     venue: 'Contextually Informed Adaptation',
     title: 'IEEE SMC (2023)',
