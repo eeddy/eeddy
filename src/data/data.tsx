@@ -8,6 +8,7 @@ import profilepic from '../images/ethan.jpg';
 import heroImage from '../images/header-background.png';
 import meVR from '../images/me_vr.png';
 import chi2023 from '../images/portfolio/chi_2023.png';
+import ciil from '../images/portfolio/ciil.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
 import percussionHero from '../images/portfolio/percussion_hero.png';
@@ -91,8 +92,15 @@ export const aboutData: About = {
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    venue: 'Context Informed Incremental Learning (CIIL)',
+    title: 'Journal of NeuroEngineering and Rehabilitation',
+    description: 'Context-informed incremental learning improves both the performance and resilience of myoelectric control',
+    url: 'https://doi.org/10.1186/s12984-024-01355-4',
+    image: ciil,
+  },
+  {
     venue: 'On-Demand Myoelectric Control',
-    title: 'TBD (2024)',
+    title: 'In Submission',
     description: 'On-Demand Myoelectric Control Using Wake Gestures to Eliminate False Activations During Activities of Daily Living',
     url: 'https://arxiv.org/abs/2402.10050',
     image: ww,
@@ -212,6 +220,12 @@ export const experience: TimelineItem[] = [
 ];
 
 export const awards: TimelineItem[] = [
+  {
+    date: '2024',
+    location: 'University of New Brunswick',
+    title: 'Canada Graduate Scholarships – PHD NSERC ',
+    content: <p></p>,
+  },
   {
     date: '2021 ',
     location: 'CHI Play',
