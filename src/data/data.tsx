@@ -1,4 +1,4 @@
-import {AcademicCapIcon, CalendarIcon, FlagIcon, MapIcon} from '@heroicons/react/24/outline';
+import {AcademicCapIcon, CalendarIcon, MapIcon, PencilIcon} from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
@@ -9,6 +9,7 @@ import heroImage from '../images/header-background.png';
 import meVR from '../images/me_vr.png';
 import chi2023 from '../images/portfolio/chi_2023.png';
 import ciil from '../images/portfolio/ciil.png';
+import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
 import percussionHero from '../images/portfolio/percussion_hero.png';
@@ -82,8 +83,8 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Fredericton, NB', Icon: MapIcon},
     {label: 'Age', text: '25', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian', Icon: FlagIcon},
     {label: 'School', text: 'University of New Brunswick', Icon: AcademicCapIcon},
+    {label: 'Email', text: 'eeddy@unb.ca', Icon: PencilIcon},
   ],
 };
 
@@ -91,6 +92,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'Confounding Factors for Discrete Myoelectric Control',
+    title: 'Journal of Neural Engineering',
+    description: 'Understanding the influence of confounding factors in myoelectric control for discrete gesture recognition',
+    url: 'https://doi.org/10.1088/1741-2552/ad4915',
+    image: confounds,
+  },
   {
     venue: 'Context Informed Incremental Learning (CIIL)',
     title: 'Journal of NeuroEngineering and Rehabilitation',
