@@ -7,6 +7,7 @@ import {isMobile} from '../config';
 import profilepic from '../images/ethan.jpg';
 import heroImage from '../images/header-background.png';
 import meVR from '../images/me_vr.png';
+import bigdata from '../images/portfolio/bigdata.png';
 import chi2023 from '../images/portfolio/chi_2023.png';
 import ciil from '../images/portfolio/ciil.png';
 import confounds from '../images/portfolio/confounds.png';
@@ -92,6 +93,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'Big Data for Cross-User Myoelectric Control',
+    title: 'In Submission',
+    description: 'Big Data in Myoelectric Control: Large Multi-User Models Enable Robust Zero-Shot EMG-based Discrete Gesture Recognition',
+    url: 'https://doi.org/10.1101/2024.07.11.603119',
+    image: bigdata,
+  },
   {
     venue: 'Confounding Factors for Discrete Myoelectric Control',
     title: 'Journal of Neural Engineering',
