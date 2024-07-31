@@ -15,6 +15,7 @@ import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import ww from '../images/portfolio/wake_word.png';
+import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
 
 /**
@@ -93,6 +94,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'Wrist vs. Forearm Myolectric Control: An Online Study',
+    title: 'Journal of Neural Engineering',
+    description: 'Comparing online wrist and forearm EMG-based control using a rhythm game-inspired evaluation environment',
+    url: 'https://doi.org/10.1088/1741-2552/ad692e',
+    image: wrist_v_forearm,
+  },
   {
     venue: 'Big Data for Cross-User Myoelectric Control',
     title: 'In Submission',
