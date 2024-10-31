@@ -14,6 +14,7 @@ import ciil from '../images/portfolio/ciil.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
+import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import ww from '../images/portfolio/wake_word.png';
 import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
@@ -95,6 +96,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'Eliminating False Activations During ADLs',
+    title: 'IEEE BioRob (2024)',
+    description: 'Human-Machine Interaction Using Discrete Myoelectric Control: Contrastive Learning Reduces False Activations During Activities of Daily Living',
+    url: 'https://ieeexplore.ieee.org/document/10719934',
+    image: lstmPush,
+  },
   {
     venue: 'Single Site Gesture Recognition',
     title: 'IEEE Sensor Letters',
