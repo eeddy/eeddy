@@ -14,6 +14,7 @@ import ciil from '../images/portfolio/ciil.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
+import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import ww from '../images/portfolio/wake_word.png';
 import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
@@ -96,6 +97,13 @@ export const aboutData: About = {
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    venue: 'Eliminating False Activations During ADLs',
+    title: 'IEEE BioRob (2024)',
+    description: 'Human-Machine Interaction Using Discrete Myoelectric Control: Contrastive Learning Reduces False Activations During Activities of Daily Living',
+    url: 'https://ieeexplore.ieee.org/document/10719934',
+    image: lstmPush,
+  },
+  {
     venue: 'Single Site Gesture Recognition',
     title: 'IEEE Sensor Letters',
     description: 'Discrete Gesture Recognition Using Multi-Modal PPG, IMU, and Single-Channel EMG Recorded at the Wrist',
@@ -111,9 +119,9 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     venue: 'Big Data for Cross-User Myoelectric Control',
-    title: 'In Submission',
+    title: 'Frontiers in Bioengineering and Biotechnology',
     description: 'Big Data in Myoelectric Control: Large Multi-User Models Enable Robust Zero-Shot EMG-based Discrete Gesture Recognition',
-    url: 'https://doi.org/10.1101/2024.07.11.603119',
+    url: 'https://doi.org/10.3389/fbioe.2024.1463377',
     image: bigdata,
   },
   {
@@ -132,9 +140,9 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     venue: 'On-Demand Myoelectric Control',
-    title: 'In Submission',
-    description: 'On-Demand Myoelectric Control Using Wake Gestures to Eliminate False Activations During Activities of Daily Living',
-    url: 'https://arxiv.org/abs/2402.10050',
+    title: 'Journal of Neural Engineering',
+    description: 'EMG-based wake gestures eliminate false activations during out-of-set activities of daily living: An online myoelectric control study',
+    url: 'https://doi.org/10.1088/1741-2552/ada4df',
     image: ww,
   },
   {
