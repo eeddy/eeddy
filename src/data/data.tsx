@@ -11,6 +11,7 @@ import bigdata from '../images/portfolio/bigdata.png';
 import biopoint from '../images/portfolio/biopoint.png'
 import chi2023 from '../images/portfolio/chi_2023.png';
 import ciil from '../images/portfolio/ciil.png';
+import ciil2 from '../images/portfolio/ciil2.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import libemg from '../images/portfolio/libemg.png';
@@ -96,6 +97,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'CIIL - Learning From Scratch',
+    title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
+    description: 'Screen Guided Training Does Not Capture Goal-Oriented Behaviours: Learning Myoelectric Control Mappings From Scratch Using Context Informed Incremental Learning',
+    url: 'https://ieeexplore.ieee.org/abstract/document/10802919',
+    image: ciil2,
+  },
   {
     venue: 'Eliminating False Activations During ADLs',
     title: 'IEEE BioRob (2024)',
