@@ -26,6 +26,17 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
+
+  // Add redirects for all of the datasets
+  async redirects() {
+    return [
+      {
+        source: '/3DC',
+        destination: 'https://github.com/LibEMG/3DCDataset',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
