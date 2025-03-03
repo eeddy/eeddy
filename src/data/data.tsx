@@ -4,8 +4,8 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import {isMobile} from '../config';
-import profilepic from '../images/ethan.jpg';
-import heroImage from '../images/header-background.png';
+import profilepic from '../images/ethan.png';
+import heroImage from '../images/header-background.jpg';
 import meVR from '../images/me_vr.png';
 import bigdata from '../images/portfolio/bigdata.png';
 import biopoint from '../images/portfolio/biopoint.png'
@@ -84,10 +84,10 @@ export const heroData: Hero = hd;
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a Ph.D. student in electrical and computer engineering at the University of New Brunswick. As part of the Institute of Biomedical Engineering, the Human-Computer Interaction (HCI) Lab, and the Spatial Computing Training and Research (SPECTRAL) Lab, my research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.`,
+  description: `I am a Ph.D. student in Electrical Engineering at the University of New Brunswick. As part of the Institute of Biomedical Engineering, the Human-Computer Interaction (HCI) Lab, and the Spatial Computing Training and Research (SPECTRAL) Lab, my research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.`,
   aboutItems: [
     {label: 'Location', text: 'Fredericton, NB', Icon: MapIcon},
-    {label: 'Age', text: '25', Icon: CalendarIcon},
+    {label: 'Age', text: '26', Icon: CalendarIcon},
     {label: 'School', text: 'University of New Brunswick', Icon: AcademicCapIcon},
     {label: 'Email', text: 'eeddy@unb.ca', Icon: PencilIcon},
   ],
@@ -98,9 +98,9 @@ export const aboutData: About = {
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    venue: 'CIIL - Learning From Scratch',
+    venue: 'Learning Myoelectric Control Mappings From Scratch',
     title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
-    description: 'Screen Guided Training Does Not Capture Goal-Oriented Behaviours: Learning Myoelectric Control Mappings From Scratch Using Context Informed Incremental Learning',
+    description: 'Screen Guided Training Does Not Capture Goal-Oriented Behaviours: Learning Myoelectric Control Mappings From Scratch Using CIIL',
     url: 'https://ieeexplore.ieee.org/abstract/document/10802919',
     image: ciil2,
   },
@@ -193,9 +193,7 @@ export const education: TimelineItem[] = [
     title: 'P.h.D in Electrical and Computer Engineering',
     content: (
       <div>
-        <p>Focusing on EMG-based control for ubiquitous hands-free input.</p>
-        <p></p>
-        <p>Cumulative GPA: 4.3 / 4.3</p>
+        <p>EMG-based control for ubiquitous hands-free input.</p>
       </div>
     ),
   },
@@ -203,7 +201,7 @@ export const education: TimelineItem[] = [
     date: 'April 2021',
     location: 'University of New Brunswick',
     title: 'Bachelor of Science in Software Engineering',
-    content: <p>Cumulative GPA: 4.2 / 4.3</p>,
+    content: <p></p>,
   },
 ];
 
@@ -272,12 +270,12 @@ export const awards: TimelineItem[] = [
     date: '2024',
     location: 'University of New Brunswick',
     title: 'Canada Graduate Scholarships – PHD NSERC ',
-    content: <p></p>,
+    content: <p>$40,000 x 3 years</p>,
   },
   {
     date: '2021 ',
     location: 'CHI Play',
-    title: 'Student Game Design Competition - Best Game',
+    title: 'Best Game - Student Game Design Competition',
     content: (
       <p>
         Publication: “Percussion Hero: A Chest Physical Therapy Game for People with Cystic Fibrosis and their
@@ -289,7 +287,7 @@ export const awards: TimelineItem[] = [
     date: '2021',
     location: 'University of New Brunswick',
     title: 'Canada Graduate Scholarships – Master’s NSERC ',
-    content: <p></p>,
+    content: <p>$17,500</p>,
   },
   {
     date: '2021',
