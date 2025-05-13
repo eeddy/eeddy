@@ -11,6 +11,7 @@ import bigdata from '../images/portfolio/bigdata.png';
 import biopoint from '../images/portfolio/biopoint.png'
 import chi2023 from '../images/portfolio/chi_2023.png';
 import ciil from '../images/portfolio/ciil.png';
+import ciil_regression from '../images/portfolio/ciil_regression.png';
 import ciil2 from '../images/portfolio/ciil2.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
@@ -97,6 +98,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'User-in-the-Loop Training for Regression',
+    title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
+    description: 'Context-Informed Incremental Learning Improves Throughput and Reduces Drift in Regression-Based Myoelectric Control',
+    url: 'Context-Informed Incremental Learning Improves Throughput and Reduces Drift in Regression-Based Myoelectric Control',
+    image: ciil_regression,
+  },
   {
     venue: 'Learning Myoelectric Control Mappings From Scratch',
     title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
@@ -207,6 +215,18 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'April 2025 – July 2025',
+    location: 'Université de Lille (France)',
+    title: 'Visiting Researcher',
+    content: (
+      <ul>
+        <li>
+          - Explored the use of reinforcement learning to automate the design and customization of transfer functions for pointing.
+        </li>
+      </ul>
+    ),
+  },
+  {
     date: 'May 2021 – August 2021',
     location: 'Human Computer Interaction Lab, University of New Brunswick',
     title: 'Research Assistant',
@@ -267,10 +287,22 @@ export const experience: TimelineItem[] = [
 
 export const awards: TimelineItem[] = [
   {
+    date: '2025',
+    location: 'France Canada Culture',
+    title: 'High Level Scientific Fellowship (Declined)',
+    content: <p>$7,000</p>,
+  },
+  {
+    date: '2025',
+    location: 'MITACS',
+    title: 'Globalink Research Award ',
+    content: <p>$6,000</p>,
+  },
+  {
     date: '2024',
     location: 'University of New Brunswick',
     title: 'Canada Graduate Scholarships – PHD NSERC ',
-    content: <p>$40,000 x 3 years</p>,
+    content: <p>$120,000</p>,
   },
   {
     date: '2021 ',
