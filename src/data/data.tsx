@@ -54,7 +54,7 @@ if (isMobile) {
     description: (
       <>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
+          I'm a PhD Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
           include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric
           control.
         </p>
@@ -69,7 +69,7 @@ if (isMobile) {
     description: (
       <>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm a P.h.D. Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
+          I'm a PhD Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
           include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric
           control.
         </p>
@@ -198,7 +198,7 @@ export const education: TimelineItem[] = [
   {
     date: 'September 2021 - Present',
     location: 'University of New Brunswick',
-    title: 'P.h.D in Electrical and Computer Engineering',
+    title: 'PhD in Electrical and Computer Engineering',
     content: (
       <div>
         <p>EMG-based control for ubiquitous hands-free input.</p>
