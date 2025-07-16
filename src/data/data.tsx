@@ -331,6 +331,21 @@ export const awards: TimelineItem[] = [
   },
 ];
 
+export const talks: TimelineItem[] = [
+  {
+    date: '2025',
+    location: 'From Prosthetics to Human-Computer Interactions: Advances and Trends in Myoelectric Control',
+    title: 'Delsys Global Webinar (Invited Speaker)',
+    content: <p></p>,
+  }, 
+  {
+    date: '2024',
+    location: 'Enabling EMG for Robust and Reliable Human-Computer Interaction: Real-World Challenges and Practicality',
+    title: 'Université de Lille (Research Talk)',
+    content: <p></p>,
+  }, 
+];
+
 /**
  * Social items
  */

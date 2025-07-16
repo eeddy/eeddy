@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-import {awards, education, experience, SectionId} from '../../../data/data';
+import {awards, education, experience, SectionId, talks} from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import TimelineItem from './TimelineItem';
@@ -21,6 +21,11 @@ const Resume: FC = memo(() => {
         </ResumeSection>
         <ResumeSection title="Awards">
           {awards.map((item, index) => (
+            <TimelineItem item={item} key={`${item.title}-${index}`} />
+          ))}
+        </ResumeSection>
+        <ResumeSection title="Research Talks">
+          {talks.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
