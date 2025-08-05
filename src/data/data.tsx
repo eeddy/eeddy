@@ -15,6 +15,7 @@ import ciil_regression from '../images/portfolio/ciil_regression.png';
 import ciil2 from '../images/portfolio/ciil2.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
+import dataset from '../images/portfolio/dataset.png'
 import libemg from '../images/portfolio/libemg.png';
 import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
@@ -99,10 +100,17 @@ export const aboutData: About = {
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    venue: 'Datasets for Standardizing EMG Research',
+    title: 'IOP Machine Learning: Health',
+    description: 'Raising the standard: an open source benchmarking platform and data repository to accelerate myoelectric control research',
+    url: 'https://iopscience.iop.org/article/10.1088/3049-477X/ade549/meta',
+    image: dataset,
+  },
+  {
     venue: 'User-in-the-Loop Training for Regression',
     title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
     description: 'Context-Informed Incremental Learning Improves Throughput and Reduces Drift in Regression-Based Myoelectric Control',
-    url: 'Context-Informed Incremental Learning Improves Throughput and Reduces Drift in Regression-Based Myoelectric Control',
+    url: 'https://ieeexplore.ieee.org/document/10988608',
     image: ciil_regression,
   },
   {
