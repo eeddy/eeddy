@@ -21,6 +21,7 @@ import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import ww from '../images/portfolio/wake_word.png';
 import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
+import incremental_review from '../images/portfolio/incremental_review.png';
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
 
 /**
@@ -81,6 +82,21 @@ if (isMobile) {
 }
 export const heroData: Hero = hd;
 
+const calculateAge = (birthDate: string): string => {
+  const birth = new Date(birthDate);
+  const today = new Date();
+
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+
+  // Adjust age if the birthday hasn't occurred yet this year
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+
+  return age.toString();
+};
+
 /**
  * About section
  */
@@ -89,7 +105,7 @@ export const aboutData: About = {
   description: `I am a Ph.D. student in Electrical Engineering at the University of New Brunswick. As part of the Institute of Biomedical Engineering, the Human-Computer Interaction (HCI) Lab, and the Spatial Computing Training and Research (SPECTRAL) Lab, my research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.`,
   aboutItems: [
     {label: 'Location', text: 'Fredericton, NB', Icon: MapIcon},
-    {label: 'Age', text: '26', Icon: CalendarIcon},
+    { label: 'Age', text: calculateAge('1998-07-22'), Icon: CalendarIcon},
     {label: 'School', text: 'University of New Brunswick', Icon: AcademicCapIcon},
     {label: 'Email', text: 'eeddy@unb.ca', Icon: PencilIcon},
   ],
@@ -99,6 +115,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'Review on Incremental Learning',
+    title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
+    description: '(Un) supervised (Co) adaptation via Incremental Learning for Myoelectric Control: Motivation, Review, and Future Directions',
+    url: 'https://ieeexplore.ieee.org/abstract/document/11137388',
+    image: incremental_review,
+  },
   {
     venue: 'Datasets for Standardizing EMG Research',
     title: 'IOP Machine Learning: Health',
@@ -223,6 +246,18 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'May 2026 – November 2026',
+    location: 'Meta (Ctrl Labs)',
+    title: 'Research Scientist Intern (Incoming)',
+    content: (
+      <ul>
+        <li>
+          - Working on the future of neural interfaces for human-computer interaction.
+        </li>
+      </ul>
+    ),
+  },
+  {
     date: 'April 2025 – July 2025',
     location: 'Université de Lille (France)',
     title: 'Visiting Researcher',
@@ -297,7 +332,7 @@ export const awards: TimelineItem[] = [
   {
     date: '2025',
     location: 'France Canada Culture',
-    title: 'High Level Scientific Fellowship (Declined)',
+    title: 'High Level Scientific Fellowship',
     content: <p>$7,000</p>,
   },
   {
