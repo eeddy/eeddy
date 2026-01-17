@@ -16,12 +16,12 @@ import ciil2 from '../images/portfolio/ciil2.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import dataset from '../images/portfolio/dataset.png'
+import incremental_review from '../images/portfolio/incremental_review.png';
 import libemg from '../images/portfolio/libemg.png';
 import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import ww from '../images/portfolio/wake_word.png';
 import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
-import incremental_review from '../images/portfolio/incremental_review.png';
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
 
 /**
@@ -105,7 +105,7 @@ export const aboutData: About = {
   description: `I am a Ph.D. student in Electrical Engineering at the University of New Brunswick. As part of the Institute of Biomedical Engineering, the Human-Computer Interaction (HCI) Lab, and the Spatial Computing Training and Research (SPECTRAL) Lab, my research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.`,
   aboutItems: [
     {label: 'Location', text: 'Fredericton, NB', Icon: MapIcon},
-    { label: 'Age', text: calculateAge('1998-07-22'), Icon: CalendarIcon},
+    {label: 'Age', text: calculateAge('1998-07-22'), Icon: CalendarIcon},
     {label: 'School', text: 'University of New Brunswick', Icon: AcademicCapIcon},
     {label: 'Email', text: 'eeddy@unb.ca', Icon: PencilIcon},
   ],
