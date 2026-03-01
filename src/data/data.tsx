@@ -376,6 +376,12 @@ export const awards: TimelineItem[] = [
 
 export const talks: TimelineItem[] = [
   {
+    date: '2026',
+    location: 'Discrete Muscle Computer Interfaces: A New Input Paradigm for Assistive Technology',
+    title: 'ICORR Webinar (Invited Speaker)',
+    content: <p></p>,
+  }, 
+  {
     date: '2025',
     location: 'From Prosthetics to Human-Computer Interactions: Advances and Trends in Myoelectric Control',
     title: 'Delsys Global Webinar (Invited Speaker)',
