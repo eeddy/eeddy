@@ -10,16 +10,19 @@ import meVR from '../images/me_vr.png';
 import bigdata from '../images/portfolio/bigdata.png';
 import biopoint from '../images/portfolio/biopoint.png'
 import chi2023 from '../images/portfolio/chi_2023.png';
+import chiEMG from '../images/portfolio/chi_emg.png';
 import ciil from '../images/portfolio/ciil.png';
 import ciil_regression from '../images/portfolio/ciil_regression.png';
 import ciil2 from '../images/portfolio/ciil2.png';
 import confounds from '../images/portfolio/confounds.png';
 import contextConf from '../images/portfolio/context_conf.png';
 import dataset from '../images/portfolio/dataset.png'
+import howlow from '../images/portfolio/how_low.png';
 import incremental_review from '../images/portfolio/incremental_review.png';
 import libemg from '../images/portfolio/libemg.png';
 import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
+import tftune from '../images/portfolio/tftune.png';
 import ww from '../images/portfolio/wake_word.png';
 import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
@@ -115,6 +118,27 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'TFTune: RL-Based Transfer Function Tuning',
+    title: 'CHI (2026)',
+    description: 'TFTune: Creation and Personalization of Pointing Transfer Functions Using Reinforcement Learning',
+    url: 'https://programs.sigchi.org/chi/2026/program/content/223384',
+    image: tftune,
+  },
+  {
+    venue: 'Cross-User Muscle-Computer Interfaces',
+    title: 'CHI (2026)',
+    description: 'Open, Accurate, and Calibration-Free Muscle-Computer Interfaces',
+    url: 'https://programs.sigchi.org/chi/2026/program/content/223438',
+    image: chiEMG,
+  },
+  {
+    venue: 'How Low Can Your Thumb Go? Useful Resolution',
+    title: 'CHI EA (2026)',
+    description: 'How Low Can Your Thumb Go? Investigating the Precision of Unidirectional Thumb Movements',
+    url: 'https://programs.sigchi.org/chi/2026/program/content/229723',
+    image: howlow,
+  },
   {
     venue: 'Review on Incremental Learning',
     title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
@@ -379,7 +403,7 @@ export const talks: TimelineItem[] = [
     date: '2026',
     location: 'Discrete Muscle Computer Interfaces: A New Input Paradigm for Assistive Technology',
     title: 'ICORR Webinar (Invited Speaker)',
-    content: <p></p>,
+    content: <p>Presented by Dr. Erik Scheme</p>,
   }, 
   {
     date: '2025',
