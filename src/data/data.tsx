@@ -398,6 +398,21 @@ export const awards: TimelineItem[] = [
   },
 ];
 
+export const teaching: TimelineItem[] = [
+  {
+    date: 'Winter 2026',
+    location: 'University of New Brunswick',
+    title: 'Web Development, Deployment and Operations (SWE4213)',
+    content: (
+      <ul>
+        <li>- Scalability, robustness, and maintainability of web applications in production environments.</li>
+        <li>- Design and configuration of local and hybrid infrastructure for web deployment.</li>
+        <li>- Modern DevOps practices bridging traditional development and operations management.</li>
+      </ul>
+    ),
+  },
+];
+
 export const talks: TimelineItem[] = [
   {
     date: '2026',
