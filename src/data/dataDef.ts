@@ -23,7 +23,7 @@ export interface HomepageMeta {
 export interface Hero {
   imageSrc: string;
   name: string;
-  description: JSX.Element;
+  description: JSX.Element | null;
   actions: HeroActionItem[];
 }
 
@@ -40,6 +40,7 @@ interface HeroActionItem {
 export interface About {
   profileImageSrc?: string;
   description: string;
+  researchInterests?: string[];
   aboutItems: AboutItem[];
 }
 
@@ -77,6 +78,7 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
+  logo?: string | StaticImageData;
 }
 /**
  * Social items

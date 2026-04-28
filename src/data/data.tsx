@@ -4,6 +4,11 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import {isMobile} from '../config';
+import gnbLogo from '../images/companies/gnb.png';
+import ibmLogo from '../images/companies/ibm.svg';
+import lilleLogo from '../images/companies/lille.png';
+import metaLogo from '../images/companies/meta.png';
+import unbLogo from '../images/companies/unb.png';
 import profilepic from '../images/ethan.png';
 import heroImage from '../images/header-background.jpg';
 import meVR from '../images/me_vr.png';
@@ -23,6 +28,7 @@ import libemg from '../images/portfolio/libemg.png';
 import lstmPush from '../images/portfolio/lstm_push.png'
 import percussionHero from '../images/portfolio/percussion_hero.png';
 import tftune from '../images/portfolio/tftune.png';
+import transformer_ciil from '../images/portfolio/transformer_ciil.png'
 import ww from '../images/portfolio/wake_word.png';
 import wrist_v_forearm from '../images/portfolio/wrist_v_forearm.png'
 import {About, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
@@ -56,30 +62,14 @@ if (isMobile) {
   hd = {
     imageSrc: meVR,
     name: `Ethan Eddy`,
-    description: (
-      <>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm a PhD Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
-          include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric
-          control.
-        </p>
-      </>
-    ),
+    description: null,
     actions: [],
   };
 } else {
   hd = {
     imageSrc: heroImage,
     name: `Ethan Eddy`,
-    description: (
-      <>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm a PhD Student at the University of New Brunswick in Fredericton, NB Canada. My research interests
-          include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric
-          control.
-        </p>
-      </>
-    ),
+    description: null,
     actions: [],
   };
 }
@@ -105,7 +95,16 @@ const calculateAge = (birthDate: string): string => {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a Ph.D. student in Electrical Engineering at the University of New Brunswick. As part of the Institute of Biomedical Engineering, the Human-Computer Interaction (HCI) Lab, and the Spatial Computing Training and Research (SPECTRAL) Lab, my research interests include human-computer interaction, ubiquitous computing, mixed reality, machine learning, and myoelectric control.`,
+  description: `I am a PhD student in Electrical Engineering at the University of New Brunswick, where my research applies machine learning to advance human-computer interaction — with a focus on muscle-computer interfaces and upper limb prosthesis control. I am currently completing an internship at Meta in New York City, and upon returning will be seeking full-time opportunities in ML/AI.`,
+  researchInterests: [
+    'Human-Computer Interaction',
+    'Machine Learning',
+    'Artificial Intelligence',
+    'Muscle-Computer Interfaces',
+    'Ubiquitous Computing',
+    'Prosthetic Control',
+    'Gesture Recognition',
+  ],
   aboutItems: [
     {label: 'Location', text: 'Fredericton, NB', Icon: MapIcon},
     {label: 'Age', text: calculateAge('1998-07-22'), Icon: CalendarIcon},
@@ -118,6 +117,13 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    venue: 'Transformer-Based Context Informed Incremental Learning',
+    title: 'IEEE Transactions on Neural Systems and Rehabilitation Engineering',
+    description: 'Transformer-Based Context Informed Incremental Learning with sDTW Alignment Unlocks Fast and Precise Regression-Based Myoelectric Control',
+    url: 'https://doi.org/10.1109/TNSRE.2026.3685074',
+    image: transformer_ciil,
+  },
   {
     venue: 'TFTune: RL-Based Transfer Function Tuning',
     title: 'CHI (2026)',
@@ -272,7 +278,8 @@ export const experience: TimelineItem[] = [
   {
     date: 'May 2026 – November 2026',
     location: 'Meta (Ctrl Labs)',
-    title: 'Research Scientist Intern (Incoming)',
+    title: 'Research Scientist Intern',
+    logo: metaLogo,
     content: (
       <ul>
         <li>
@@ -285,6 +292,7 @@ export const experience: TimelineItem[] = [
     date: 'April 2025 – July 2025',
     location: 'Université de Lille (France)',
     title: 'Visiting Researcher',
+    logo: lilleLogo,
     content: (
       <ul>
         <li>
@@ -297,6 +305,7 @@ export const experience: TimelineItem[] = [
     date: 'May 2021 – August 2021',
     location: 'Human Computer Interaction Lab, University of New Brunswick',
     title: 'Research Assistant',
+    logo: unbLogo,
     content: (
       <ul>
         <li>
@@ -310,6 +319,7 @@ export const experience: TimelineItem[] = [
     date: 'May 2020 – August 2020',
     location: 'IBM Fredericton',
     title: 'Software Developer ',
+    logo: ibmLogo,
     content: (
       <ul>
         <li>- Defect fixes and feature enhancements using Java, Bash, and Python.</li>
@@ -321,6 +331,7 @@ export const experience: TimelineItem[] = [
     date: 'January 2019 – August 2019	',
     location: 'IBM Fredericton',
     title: 'Software Developer ',
+    logo: ibmLogo,
     content: (
       <ul>
         <li>- Defect fixes and feature enhancements using Rust, Go, Groovy and Bash.</li>
@@ -332,6 +343,7 @@ export const experience: TimelineItem[] = [
     date: 'June 2018 – August 2018	',
     location: 'Department of Transportation - GNB  ',
     title: 'Summer Student',
+    logo: gnbLogo,
     content: (
       <ul>
         <li>- Developed excel macros using VBA to improve internal processes.</li>
@@ -343,6 +355,7 @@ export const experience: TimelineItem[] = [
     date: 'January 2018 – April 2018',
     location: 'IBM Fredericton',
     title: 'Quality Engineer',
+    logo: ibmLogo,
     content: (
       <ul>
         <li>- Developed and implemented tests for new defect fixes and features.</li>

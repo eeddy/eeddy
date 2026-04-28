@@ -20,11 +20,12 @@ const Hero: FC = memo(() => {
           priority
           src={imageSrc}
         />
-        <div className="z-10  max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
+        <div className="z-10 w-2/3 px-4 lg:px-0">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 px-12 py-10 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
+            <p className="text-lg text-stone-300 sm:text-xl">PhD Researcher · ML/AI Engineer</p>
             {description}
-            <div className="flex gap-x-4 text-neutral-100">
+            <div className="flex gap-x-6 text-neutral-100">
               <Socials />
             </div>
             <div className="flex w-full justify-center gap-x-4">
