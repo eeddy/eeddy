@@ -296,7 +296,10 @@ export const experience: TimelineItem[] = [
     content: (
       <ul>
         <li>
-          - Explored improving transfer functions for desktop pointing.
+          - Explored improving transfer functions for desktop pointing using reinforcement learning.
+        </li>
+        <li>
+          - Improved Windows and macOS pointing transfer functions by more than 7%. 
         </li>
       </ul>
     ),
