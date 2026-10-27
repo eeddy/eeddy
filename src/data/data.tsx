@@ -95,7 +95,7 @@ const calculateAge = (birthDate: string): string => {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a PhD student in Electrical Engineering at the University of New Brunswick, where my research applies machine learning to advance human-computer interaction — with a focus on muscle-computer interfaces and upper limb prosthesis control. I am currently completing an internship at Meta in New York City, and upon returning will be seeking full-time opportunities in ML/AI.`,
+  description: `I am a PhD student in Electrical Engineering at the University of New Brunswick, where my research applies machine learning to advance human-computer interaction — with a focus on muscle-computer interfaces and upper limb prosthesis control. I recently completed an internship at Meta in New York City.`,
   researchInterests: [
     'Human-Computer Interaction',
     'Machine Learning',
@@ -172,7 +172,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Screen Guided Training Does Not Capture Goal-Oriented Behaviours: Learning Myoelectric Control Mappings From Scratch Using CIIL',
     url: 'https://ieeexplore.ieee.org/abstract/document/10802919',
     image: ciil2,
-  },
+  }, 
   {
     venue: 'Eliminating False Activations During ADLs',
     title: 'IEEE BioRob (2024)',
@@ -283,7 +283,10 @@ export const experience: TimelineItem[] = [
     content: (
       <ul>
         <li>
-          - Working on the future of neural interfaces for human-computer interaction.
+          - Built neural interfaces for human-computer interaction.
+        </li>
+        <li>
+          - Owned the full research stack: experimental design, data collection, analysis, and modelling.
         </li>
       </ul>
     ),
