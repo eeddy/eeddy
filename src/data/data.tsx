@@ -283,7 +283,7 @@ export const experience: TimelineItem[] = [
     content: (
       <ul>
         <li>
-          - Built neural interfaces for human-computer interaction.
+          - Built neural interfaces for next generation human-computer interaction.
         </li>
         <li>
           - Owned the full research stack: experimental design, data collection, analysis, and modelling.
